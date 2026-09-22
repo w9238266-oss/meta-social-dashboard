@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: meta-social-dashboard
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 24
+      - key: DATA_DIR
+        value: /var/data
+    disk:
+      name: analytics-data
+      mountPath: /var/data
+      sizeGB: 1

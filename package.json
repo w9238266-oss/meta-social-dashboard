@@ -1,0 +1,9 @@
+{
+  "name": "meta-social-dashboard",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --use-env-proxy server.mjs",
+    "report": "node --env-file=.env --use-env-proxy report.mjs"
+  }
+}
